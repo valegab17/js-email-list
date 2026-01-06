@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Esercizio Email List</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
-    <!-- CSS -->
-     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <ul id="lista"></ul>
-    <button id="btn">Genera altre 10 email</button>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="card shadow p-4 mx-auto" style="max-width: 400px;">
+            <h3 class="card-title text-center mb-4">Generatore di Email</h3>
+
+            <!-- Lista delle email -->
+            <ul id="lista" class="list-group mb-3"></ul>
+
+            <!-- Bottone -->
+            <button id="btn" class="btn btn-primary w-100">Genera altre 10 email</button>
+        </div>
+    </div>
+
     <!-- JS -->
     <script src="js/script.js"></script>
 </body>
